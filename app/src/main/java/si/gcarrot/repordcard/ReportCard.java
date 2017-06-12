@@ -16,10 +16,16 @@ public class ReportCard {
     private int englishMark, mathMark, socialMark, programmingMark, gameDesignMark;
 
 
-    public ReportCard(String studentName, String schoolName, String rollNumber){
+    public ReportCard(String studentName, String schoolName, String rollNumber, int engMark, int matMark, int socMark, int proMark, int gadMark){
         mSchoolName = schoolName;
         mStudentName = studentName;
         mRollNumber = rollNumber;
+
+        englishMark = engMark;
+        mathMark = matMark;
+        socialMark = socMark;
+        programmingMark = proMark;
+        gameDesignMark = gadMark;
     }
 
     public String getStudentName(){

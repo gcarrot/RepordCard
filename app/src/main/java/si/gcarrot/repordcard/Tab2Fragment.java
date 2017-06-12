@@ -23,7 +23,7 @@ public class Tab2Fragment extends Fragment {
 
         TextView tvReport = (TextView) rootView.findViewById(R.id.tvReport);
 
-        ReportCard reportCard = new ReportCard("John Doe", "Udacity", "8752104");
+        ReportCard reportCard = new ReportCard("John Doe", "Udacity", "8752104", 100, 100, 100, 100, 100);
         reportCard.setEnglishMark(76);
         reportCard.setMathMark(68);
         reportCard.setProgrammingMark(86);
