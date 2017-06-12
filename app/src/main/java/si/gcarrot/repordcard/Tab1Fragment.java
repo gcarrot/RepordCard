@@ -34,7 +34,7 @@ public class Tab1Fragment extends Fragment {
         tvName.setText(reportCard.getStudentName());
 
         TextView tvUniversity = (TextView) rootView.findViewById(R.id.tvUniversity);
-        tvUniversity.setText("School: "+reportCard.getSchoolName());
+        tvUniversity.setText("School: " + reportCard.getSchoolName());
 
         TextView tvRollNumber = (TextView) rootView.findViewById(R.id.tvRollNumber);
         tvRollNumber.setText("Roll number: " + reportCard.getRollNumber());

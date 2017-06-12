@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class GradeList extends ArrayAdapter<Grade> {
 
     public GradeList(Context context, ArrayList<Grade> pWords) {
-        super(context,0, pWords);
+        super(context, 0, pWords);
     }
 
     @Override
@@ -25,7 +25,7 @@ public class GradeList extends ArrayAdapter<Grade> {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
 
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
@@ -35,7 +35,7 @@ public class GradeList extends ArrayAdapter<Grade> {
         TextView tvGrade = (TextView) listItemView.findViewById(R.id.tvGrade);
         tvGrade.setText(local_word.getClassGrade());
 
-        if(local_word.getClassName() == "Grade"){
+        if (local_word.getClassName() == "Grade") {
             tvClass.setTextSize(22);
             tvGrade.setTextSize(26);
         }

@@ -16,7 +16,7 @@ public class ReportCard {
     private int englishMark, mathMark, socialMark, programmingMark, gameDesignMark;
 
 
-    public ReportCard(String studentName, String schoolName, String rollNumber, int engMark, int matMark, int socMark, int proMark, int gadMark){
+    public ReportCard(String studentName, String schoolName, String rollNumber, int engMark, int matMark, int socMark, int proMark, int gadMark) {
         mSchoolName = schoolName;
         mStudentName = studentName;
         mRollNumber = rollNumber;
@@ -28,59 +28,59 @@ public class ReportCard {
         gameDesignMark = gadMark;
     }
 
-    public String getStudentName(){
+    public String getStudentName() {
         return mStudentName;
     }
 
-    public String getSchoolName(){
+    public String getSchoolName() {
         return mSchoolName;
     }
 
-    public String getRollNumber(){
+    public String getRollNumber() {
         return mRollNumber;
     }
 
-    public void setEnglishMark(int mark){
+    public void setEnglishMark(int mark) {
         this.englishMark = mark;
     }
 
-    public int getEnglishMark(){
+    public int getEnglishMark() {
         return englishMark;
     }
 
-    public void setMathMark(int mark){
+    public void setMathMark(int mark) {
         this.mathMark = mark;
     }
 
-    public int getMathMark(){
+    public int getMathMark() {
         return mathMark;
     }
 
-    public void setSocialMark(int mark){
+    public void setSocialMark(int mark) {
         this.socialMark = mark;
     }
 
-    public int getSocialMark(){
+    public int getSocialMark() {
         return socialMark;
     }
 
-    public void setProgrammingMark(int mark){
+    public void setProgrammingMark(int mark) {
         this.programmingMark = mark;
     }
 
-    public int getProgrammingMark(){
+    public int getProgrammingMark() {
         return programmingMark;
     }
 
-    public void setGameDesignMark(int mark){
+    public void setGameDesignMark(int mark) {
         this.gameDesignMark = mark;
     }
 
-    public int getGameDesignMark(){
+    public int getGameDesignMark() {
         return gameDesignMark;
     }
 
-    public String getGrade(){
+    public String getGrade() {
         String grade = "";
         int Sum = this.englishMark + this.gameDesignMark + this.programmingMark + this.socialMark + this.mathMark;
         double percentage = Sum / TOTAL;
@@ -102,7 +102,7 @@ public class ReportCard {
         return grade;
     }
 
-    public ArrayList<Grade> getArrayList(){
+    public ArrayList<Grade> getArrayList() {
         ArrayList<Grade> grade = new ArrayList<Grade>();
         grade.add(new Grade("English", String.valueOf(englishMark)));
         grade.add(new Grade("Math", String.valueOf(mathMark)));

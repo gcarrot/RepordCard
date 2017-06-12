@@ -6,14 +6,18 @@ package si.gcarrot.repordcard;
 
 public class Grade {
 
-    /** Default translation fot the word **/
+    /**
+     * Default translation fot the word
+     **/
     private String mClassName;
 
-    /** Miwok translation fot the word **/
+    /**
+     * Miwok translation fot the word
+     **/
     private String mClassGrade;
 
 
-    public Grade(String className, String classGrade){
+    public Grade(String className, String classGrade) {
         mClassGrade = classGrade;
         mClassName = className;
     }
@@ -22,7 +26,7 @@ public class Grade {
      * Get the default translation of the word
      */
 
-    public String getClassName(){
+    public String getClassName() {
         return mClassName;
     }
 
@@ -30,7 +34,7 @@ public class Grade {
      * Get the miwok translation of the word
      */
 
-    public String getClassGrade(){
+    public String getClassGrade() {
         return mClassGrade;
     }
 }

@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
 
-
-
     }
 
     private void setupViewPager(ViewPager viewPager) {
